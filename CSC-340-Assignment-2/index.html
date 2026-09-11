@@ -3,124 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>One Piece Charact Gallery</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .custom-navbar {
+            background-color: rgb(28, 28, 143);
+    }
+
+    .navbar .nav-link { 
+        color: #ffffff !important; 
+    
+    }
+
+        .character-img {
+            height: 250px;
+            object-fit: contain;
+            width: 100%;
+            background-color: white;
+    }
+
+    .card {
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        color:black;
+    }
+
+     .card:hover {
+        transform: scale(1.02);
+        transition: 0.2s;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    </style>
+
 </head>
 <body>
 
-<h1> One Piece Character Gallery</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar mb-4">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">One Piece Gallery</a>
 
-<p> Explore some of the most memorable characters from the world of One Piece</p>
+        <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="details.html">Details</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="add-character.html">Add a Character</a>
+        </div>
+    </div>
+</nav>
 
-<h2> Characters</h2>
+<div class="container">
+            <p class="text-center mb-4"> Explore some of the most memorable characters from the world of One Piece</p>
 
-<!-- Luffy -->
-<article>
-    <img src="https://static.wikia.nocookie.net/97858f96-9cd8-4e33-9162-4bfb87080172/scale-to-width/755" alt="Monkey D. Luffy"
-    <h3> Monkey D. Luffy </h3>
-    <p><strong>Universe:</strong> One Piece</p> 
-    <p><strong>Role:</strong> Pirate Captain</p> 
-    <p><strong>Species:</strong> Human</p> 
-    <p><strong>Devil Fruit:</strong> Gomu Gomu no Mi</p>
+            <div class="mb-4">
+                <label for="characterSearch" class="form-label">Search Characters</label>
+                <input 
+                    type="text" 
+                    class="form-control" 
+                    id="characterSearch" 
+                    placeholder="Search by character name or category..."
+                >
+            </div>
 
-    <p> Captain of teh Straw Hat Pirates who dreams of becoming the Pirate King</p>
 
-</article>
 
-<!-- Zoro -->
-<article>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUpgqcsDq4u_S9506YZjeRrU_O2uQoeJHGhgKvqL04WQ&s=10" alt="Roronoa Zoro"
-    <h3> Roronoa Zoro </h3>
-    <p><strong>Universe:</strong> One Piece</p> 
-    <p><strong>Role:</strong> Swordsman</p> 
-    <p><strong>Species:</strong> Human</p> 
-    <p><strong>Ability:</strong> Three-Sword Style</p>
+            <h1 class="text-center mb-4"> Characters</h1>
+            <div class="row">
+            <!-- Luffy -->
+             <div class="col-md-3">
+                <div class="card">
+                    <img src="https://static.wikia.nocookie.net/97858f96-9cd8-4e33-9162-4bfb87080172/scale-to-width/755" class="card-img-top character-img" alt="Monkey D. Luffy">
 
-    <p> A skilled swordsman and member of the Straw Hat Pirates who dreams of becoming the world's greatest swordsman.</p>
-</article>
+                    <div class="card-body">
+                    <h3 class="card-title">Monkey D. Luffy</h3>
 
-<!-- Nami -->
-<article>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1iOxHC9hJwm_WIedgI7nSCHh-Lb5JJz_tfU9xr4XSHA&s" alt="Nami"
-    <h3> Nami </h3>
-    <p><strong>Universe:</strong> One Piece</p> 
-    <p><strong>Role:</strong> Navigator</p> 
-    <p><strong>Species:</strong> Human</p> 
-    <p><strong>Weapon:</strong> Clima-Tact</p>
+                    <p><strong>Universe:</strong> One Piece</p>
+                    <p><strong>Role:</strong> Pirate Captain</p>
+                    <p><strong>Species:</strong> Human</p>
+                    <p><strong>Devil Fruit:</strong> Gomu Gomu no Mi</p>
 
-    <p> The Straw Hat Priates navigator who has an exceptional talent for reading weather and navigating the seas.</p>
-</article>
+                    <p>
+                        Captain of the Straw Hat Pirates who dreams of becoming the Pirate King.
+                    </p>
+                    </div>
+                </div>
+            </div>
 
-<!-- Sanji -->
-<article> 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrBj1SHeLet8comHeeeTCWslAC5hi4s5ANtRMcYQfjmg&s=10" alt="Sanji"
-    <h3> Sanji</h3>
-    <p><strong>Universe:</strong> One Piece</p> 
-    <p><strong>Role:</strong> Cook</p> 
-    <p><strong>Species:</strong> Human</p> 
-    <p><strong>Ability:</strong> Black leg Style</p>
+            <!-- Zoro -->
+                <div class="col-md-3">
+                    <div class="card">
 
-    <p> The Straw Hat Pirates cook who fights using powerful kicks and dreams of finding the lengendary All Blue.</p>
-</article>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUpgqcsDq4u_S9506YZjeRrU_O2uQoeJHGhgKvqL04WQ&s=10" class="card-img-top character-img" alt="Roronoa Zoro">
 
-<!-- Usopp -->
-<article>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB-PTGzmT2KD1bE4QwGPz1oz3quIrMuAS4ob88kNx0Wg&s=10" alt="Usopp"
-    <h3> Usopp </h3>
-    <p><strong>Universe:</strong> One Piece</p> 
-    <p><strong>Role:</strong> Sniper</p> 
-    <p><strong>Species:</strong> Human</p> 
-    <p><strong>Ability:</strong> Marksman</p>
+                        <div class="card-body">
+                        <h3 class="card-title">Roronoa Zoro</h3>
 
-    <p> The Straw Hat Pirates sniper who uses his creativity and exceptional shooting skills in battle.</p>
+                            <p><strong>Universe:</strong> One Piece</p>
+                            <p><strong>Role:</strong> Swordsman</p>
+                            <p><strong>Species:</strong> Human</p>
+                            <p><strong>Ability:</strong> Three-Sword Style</p>
 
-</article>
+                            <p>
+                                A skilled swordsman and member of the Straw Hat Pirates who
+                                dreams of becoming the world's greatest swordsman.
+                            </p>
+                        </div>
 
-<!-- Chopper -->
-<article>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxUJgoiFXZS1yyKzCfvUGw3rtf7HTWUiiGayJdIkZl8A&s=10" alt="Chopper"
-    <h3> Tony Tony Chopper</h3>
-    <p><strong>Universe:</strong> One Piece</p> 
-    <p><strong>Role:</strong> Doctor</p> 
-    <p><strong>Species:</strong> Reindeer</p> 
-    <p><strong>Devil Fruit:</strong> Hito Hito no Mi</p>
+                    </div>
+                </div>
 
-    <p> A reindeer who gained human abilities and became the Straw Hat Pirates doctor.</p>
-</article>
 
-<!-- Robin -->
-<article>
-    <img src="
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZfvzNc5Ie-2rQUewi4Kwq6iCygsPbs-47wQe-HzL4cg&s=10" alt="Nico Robin"
-    <h3> Nico Robin </h3>
-    <p><strong>Universe:</strong> One Piece</p> 
-    <p><strong>Role:</strong> Archaeologist</p> 
-    <p><strong>Species:</strong> Human</p> 
-    <p><strong>Devil Fruit:</strong> Hana Hana no Mi</p>
+            <!-- Nami -->
+                <div class="col-md-3">
+                    <div class="card">      
 
-    <p> An archaeologist searching for the true history of the world and a memeber of the Straw Hat Pirates.</p>
-</article>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1iOxHC9hJwm_WIedgI7nSCHh-Lb5JJz_tfU9xr4XSHA&s" class="card-img-top character-img" alt="Nami">
 
-<!-- Franky -->
-<article> 
-    <img src="https://64.media.tumblr.com/d4d9535f59e26570433c5ed1d3d5e44c/tumblr_inline_pcltarGyVi1s4hjr2_640.png" alt="Franky"
-    <h3> Franky </h3>
-    <p><strong>Universe:</strong> One Piece</p> 
-    <p><strong>Role:</strong> Shipwright</p> 
-    <p><strong>Species:</strong> Cyborg</p> 
-    <p><strong>Ability:</strong> Cyborg Modifications</p>
+                            <div class="card-body">
+                                <h3 class="card-title">Nami</h3>
 
-    <p> The Straw Hat Pirates Shipwright who built and maintains the Thousand Sunny (the ship). </p>
-</article>
+                                <p><strong>Universe:</strong> One Piece</p>
+                                <p><strong>Role:</strong> Navigator</p>
+                                <p><strong>Species:</strong> Human</p>
+                                <p><strong>Weapon:</strong> Clima-Tact</p>
 
-<!-- Brook -->
-<article>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStaNtTID2cPFNRmFsWdmdOPy5POnd0bscncOsEo-_OiA&s=10 " alt="Brook"
-    <h3> Brook</h3>
-    <p><strong>Universe:</strong> One Piece</p> 
-    <p><strong>Role:</strong> Musician</p> 
-    <p><strong>Species:</strong> Revived Human</p> 
-    <p><strong>Devil Fruit:</strong> Yomi Yomi no Mi</p>
+                                <p>
+                                    The Straw Hat Pirates' navigator who has an exceptional talent
+                                    for reading weather and navigating the seas.
+                                </p>
+                            </div>
 
-</article>
+                    </div>
+                </div>
+
+
+            <!-- Sanji -->
+                <div class="col-md-3">
+                    <div class="card">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrBj1SHeLet8comHeeeTCWslAC5hi4s5ANtRMcYQfjmg&s=10" class="card-img-top character-img" alt="Sanji">
+
+                            <div class="card-body">
+                                <h3 class="card-title">Sanji</h3>
+
+                                <p><strong>Universe:</strong> One Piece</p>
+                                <p><strong>Role:</strong> Cook</p>
+                                <p><strong>Species:</strong> Human</p>
+                                <p><strong>Ability:</strong> Black Leg Style</p>
+
+                                <p>
+                                    The Straw Hat Pirates' cook who fights using powerful kicks
+                                    and dreams of finding the legendary All Blue.
+                                </p>
+                            </div>
+
+                    </div>
+                </div>
+
+
+            <!-- Usopp -->
+                <div class="col-md-3">
+                    <div class="card">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB-PTGzmT2KD1bE4QwGPz1oz3quIrMuAS4ob88kNx0Wg&s=10" class="card-img-top character-img" alt="Usopp">
+
+                            <div class="card-body">
+                                <h3 class="card-title">Usopp</h3>
+
+                                <p><strong>Universe:</strong> One Piece</p>
+                                <p><strong>Role:</strong> Sniper</p>
+                                <p><strong>Species:</strong> Human</p>
+                                <p><strong>Ability:</strong> Marksman</p>
+
+                                <p>
+                                    The Straw Hat Pirates' sniper who uses his creativity and
+                                    exceptional shooting skills in battle.
+                                </p>
+                            </div>
+
+                    </div>
+                </div>
+
+
+            <!-- Chopper -->
+                <div class="col-md-3">
+                    <div class="card">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxUJgoiFXZS1yyKzCfvUGw3rtf7HTWUiiGayJdIkZl8A&s=10" class="card-img-top character-img" alt="Tony Tony Chopper">
+
+                            <div class="card-body">
+                                <h3 class="card-title">Tony Tony Chopper</h3>
+
+                                <p><strong>Universe:</strong> One Piece</p>
+                                <p><strong>Role:</strong> Doctor</p>
+                                <p><strong>Species:</strong> Reindeer</p>
+                                <p><strong>Devil Fruit:</strong> Hito Hito no Mi</p>
+
+                                <p>
+                                    A reindeer who gained human abilities and became the
+                                    Straw Hat Pirates' doctor.
+                                </p>
+                            </div>
+
+                    </div>
+                </div>
+
+
+            <!-- Robin -->
+                <div class="col-md-3">
+                    <div class="card">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZfvzNc5Ie-2rQUewi4Kwq6iCygsPbs-47wQe-HzL4cg&s=10" class="card-img-top character-img" alt="Nico Robin">
+
+                            <div class="card-body">
+                                <h3 class="card-title">Nico Robin</h3>
+
+                                <p><strong>Universe:</strong> One Piece</p>
+                                <p><strong>Role:</strong> Archaeologist</p>
+                                <p><strong>Species:</strong> Human</p>
+                                <p><strong>Devil Fruit:</strong> Hana Hana no Mi</p>
+
+                                <p>
+                                    An archaeologist searching for the true history of the world
+                                    and a member of the Straw Hat Pirates.
+                                </p>
+                            </div>
+
+                    </div>
+                </div>
+
+
+            <!-- Franky -->
+                <div class="col-md-3">
+                    <div class="card">
+
+                        <img src="https://64.media.tumblr.com/d4d9535f59e26570433c5ed1d3d5e44c/tumblr_inline_pcltarGyVi1s4hjr2_640.png" class="card-img-top character-img" alt="Franky">
+
+                            <div class="card-body">
+                                <h3 class="card-title">Franky</h3>
+
+                                    <p><strong>Universe:</strong> One Piece</p>
+                                    <p><strong>Role:</strong> Shipwright</p>
+                                    <p><strong>Species:</strong> Cyborg</p>
+                                    <p><strong>Ability:</strong> Cyborg Modifications</p>
+
+                                    <p>
+                                        The Straw Hat Pirates' shipwright who built and maintains
+                                        the Thousand Sunny.
+                                    </p>
+                            </div>
+
+                    </div>
+                </div>
+
+
+            <!-- Brook -->
+                <div class="col-md-3 mx-auto">
+                    <div class="card">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStaNtTID2cPFNRmFsWdmdOPy5POnd0bscncOsEo-_OiA&s=10" class="card-img-top character-img" alt="Brook">
+
+                            <div class="card-body">
+                                <h3 class="card-title">Brook</h3>
+
+                                <p><strong>Universe:</strong> One Piece</p>
+                                <p><strong>Role:</strong> Musician</p>
+                                <p><strong>Species:</strong> Revived Human</p>
+                                <p><strong>Devil Fruit:</strong> Yomi Yomi no Mi</p>
+                            </div>
+                    </div>
+                </div> 
+            </div>   
+</div>           
 </body>
 </html>
